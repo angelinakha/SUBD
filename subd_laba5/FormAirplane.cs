@@ -7,14 +7,24 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DB.Implements;
+using DB.Tables;
 
 namespace subd_laba5
 {
     public partial class FormAirplane : Form
     {
+        AirplaneStorage airplaneStorage;
+
         public FormAirplane()
         {
             InitializeComponent();
+            airplaneStorage = new AirplaneStorage();
+        }
+
+        private void buttonUpdate_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

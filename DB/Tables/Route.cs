@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace DB.Tables
 {
-    class Route
+    public class Route
     {
+        public int Id { get; set; }
+        public string DeparturePoint { get; set; }
+        public string Destination { get; set; }
+        public DateTime FlightDate { get; set; }
+        public DateTime DepartureTime { get; set; }
+
     }
 }

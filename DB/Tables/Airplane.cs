@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace DB.Tables
 {
-    class Airplane
+    public class Airplane
     {
+        public int Id { get; set; }
+        public string Aircraftname { get; set; }
+        public int MaxNumberOfSeats { get; set; }
     }
 }

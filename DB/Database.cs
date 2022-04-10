@@ -10,7 +10,7 @@ namespace DB
         {
             if (optionsBuilder.IsConfigured == false)
             {
-                optionsBuilder.UseSqlServer("Host=localhost;Port=5432;Database=local;Username=postgres;Password=250521");
+                optionsBuilder.UseNpgsql("Host=localhost;Port=5432;Database=local;Username=postgres;Password=250521");
             }
             base.OnConfiguring(optionsBuilder);
         }

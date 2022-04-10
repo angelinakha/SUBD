@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace DB.Tables
 {
-    class Pilot
+    public class Pilot
     {
+        public int Id { get; set; }
+        public string NamePilot { get; set; }
     }
 }

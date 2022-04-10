@@ -7,14 +7,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DB.Implements;
+using DB.Tables;
 
 namespace subd_laba5
 {
     public partial class FormPilot : Form
     {
+        PilotStorage pilotStorage;
         public FormPilot()
         {
             InitializeComponent();
+            pilotStorage = new PilotStorage();
         }
     }
 }
