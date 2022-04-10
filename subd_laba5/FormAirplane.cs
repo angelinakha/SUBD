@@ -10,12 +10,11 @@ using System.Windows.Forms;
 
 namespace subd_laba5
 {
-    public partial class Form1 : Form
+    public partial class FormAirplane : Form
     {
-        public Form1()
+        public FormAirplane()
         {
             InitializeComponent();
         }
-
     }
 }
