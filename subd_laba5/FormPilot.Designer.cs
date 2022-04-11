@@ -49,6 +49,7 @@ namespace subd_laba5
             this.buttonDelete.TabIndex = 9;
             this.buttonDelete.Text = "Удалить";
             this.buttonDelete.UseVisualStyleBackColor = true;
+            this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
             // 
             // buttonRef
             // 
@@ -58,6 +59,7 @@ namespace subd_laba5
             this.buttonRef.TabIndex = 8;
             this.buttonRef.Text = "Изменить";
             this.buttonRef.UseVisualStyleBackColor = true;
+            this.buttonRef.Click += new System.EventHandler(this.buttonRef_Click);
             // 
             // buttonUpdate
             // 
@@ -67,6 +69,7 @@ namespace subd_laba5
             this.buttonUpdate.TabIndex = 7;
             this.buttonUpdate.Text = "Обновить";
             this.buttonUpdate.UseVisualStyleBackColor = true;
+            this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // buttonAdd
             // 
@@ -76,6 +79,7 @@ namespace subd_laba5
             this.buttonAdd.TabIndex = 6;
             this.buttonAdd.Text = "Добавить";
             this.buttonAdd.UseVisualStyleBackColor = true;
+            this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
             // dataGridView1
             // 
@@ -135,6 +139,7 @@ namespace subd_laba5
             this.Controls.Add(this.dataGridView1);
             this.Name = "FormPilot";
             this.Text = "FormPilot";
+            this.Load += new System.EventHandler(this.FormPilot_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

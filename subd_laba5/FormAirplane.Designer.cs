@@ -61,6 +61,7 @@ namespace subd_laba5
             this.buttonAdd.TabIndex = 1;
             this.buttonAdd.Text = "Добавить";
             this.buttonAdd.UseVisualStyleBackColor = true;
+            this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
             // buttonUpdate
             // 
@@ -80,6 +81,7 @@ namespace subd_laba5
             this.buttonRef.TabIndex = 3;
             this.buttonRef.Text = "Изменить";
             this.buttonRef.UseVisualStyleBackColor = true;
+            this.buttonRef.Click += new System.EventHandler(this.buttonRef_Click);
             // 
             // buttonDelete
             // 
@@ -89,6 +91,7 @@ namespace subd_laba5
             this.buttonDelete.TabIndex = 4;
             this.buttonDelete.Text = "Удалить";
             this.buttonDelete.UseVisualStyleBackColor = true;
+            this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
             // 
             // comboBoxId
             // 
@@ -97,7 +100,6 @@ namespace subd_laba5
             this.comboBoxId.Name = "comboBoxId";
             this.comboBoxId.Size = new System.Drawing.Size(108, 23);
             this.comboBoxId.TabIndex = 5;
-            this.comboBoxId.SelectedIndexChanged += new System.EventHandler(this.comboBoxId_SelectedIndexChanged);
             // 
             // labelId
             // 
@@ -107,7 +109,6 @@ namespace subd_laba5
             this.labelId.Size = new System.Drawing.Size(20, 15);
             this.labelId.TabIndex = 6;
             this.labelId.Text = "Id:";
-            this.labelId.Click += new System.EventHandler(this.labelId_Click);
             // 
             // textBoxName
             // 
@@ -115,7 +116,6 @@ namespace subd_laba5
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.Size = new System.Drawing.Size(108, 23);
             this.textBoxName.TabIndex = 7;
-            this.textBoxName.TextChanged += new System.EventHandler(this.textBoxName_TextChanged);
             // 
             // labelName
             // 
@@ -125,7 +125,6 @@ namespace subd_laba5
             this.labelName.Size = new System.Drawing.Size(62, 15);
             this.labelName.TabIndex = 8;
             this.labelName.Text = "Название:";
-            this.labelName.Click += new System.EventHandler(this.labelName_Click);
             // 
             // label1
             // 
@@ -142,7 +141,6 @@ namespace subd_laba5
             this.textBoxSeat.Name = "textBoxSeat";
             this.textBoxSeat.Size = new System.Drawing.Size(108, 23);
             this.textBoxSeat.TabIndex = 9;
-            this.textBoxSeat.TextChanged += new System.EventHandler(this.textBoxSeat_TextChanged);
             // 
             // FormAirplane
             // 

@@ -37,7 +37,7 @@ namespace subd_laba5
             this.labelId = new System.Windows.Forms.Label();
             this.comboBoxId = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxPrice = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -49,6 +49,7 @@ namespace subd_laba5
             this.buttonDelete.TabIndex = 9;
             this.buttonDelete.Text = "Удалить";
             this.buttonDelete.UseVisualStyleBackColor = true;
+            this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
             // 
             // buttonRef
             // 
@@ -58,6 +59,7 @@ namespace subd_laba5
             this.buttonRef.TabIndex = 8;
             this.buttonRef.Text = "Изменить";
             this.buttonRef.UseVisualStyleBackColor = true;
+            this.buttonRef.Click += new System.EventHandler(this.buttonRef_Click);
             // 
             // buttonUpdate
             // 
@@ -67,6 +69,7 @@ namespace subd_laba5
             this.buttonUpdate.TabIndex = 7;
             this.buttonUpdate.Text = "Обновить";
             this.buttonUpdate.UseVisualStyleBackColor = true;
+            this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // buttonAdd
             // 
@@ -76,6 +79,7 @@ namespace subd_laba5
             this.buttonAdd.TabIndex = 6;
             this.buttonAdd.Text = "Добавить";
             this.buttonAdd.UseVisualStyleBackColor = true;
+            this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
             // dataGridView1
             // 
@@ -112,19 +116,19 @@ namespace subd_laba5
             this.label1.TabIndex = 14;
             this.label1.Text = "Цена билета:";
             // 
-            // textBox1
+            // textBoxPrice
             // 
-            this.textBox1.Location = new System.Drawing.Point(709, 72);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(107, 23);
-            this.textBox1.TabIndex = 15;
+            this.textBoxPrice.Location = new System.Drawing.Point(709, 72);
+            this.textBoxPrice.Name = "textBoxPrice";
+            this.textBoxPrice.Size = new System.Drawing.Size(107, 23);
+            this.textBoxPrice.TabIndex = 15;
             // 
             // FormTicket
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(840, 354);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxPrice);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.labelId);
             this.Controls.Add(this.comboBoxId);
@@ -135,6 +139,7 @@ namespace subd_laba5
             this.Controls.Add(this.dataGridView1);
             this.Name = "FormTicket";
             this.Text = "FormTicket";
+            this.Load += new System.EventHandler(this.FormTicket_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -151,6 +156,6 @@ namespace subd_laba5
         private System.Windows.Forms.Label labelId;
         private System.Windows.Forms.ComboBox comboBoxId;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxPrice;
     }
 }

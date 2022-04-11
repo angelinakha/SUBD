@@ -15,6 +15,10 @@ namespace subd_laba5
     public partial class FormFlight : Form
     {
         FlightStorage flightStorage;
+        AirplaneStorage airplaneStorage;
+        PilotStorage pilotStorage;
+        RouteStorage routeStorage;
+        TicketStorage ticketStorage;
         public FormFlight()
         {
             InitializeComponent();
