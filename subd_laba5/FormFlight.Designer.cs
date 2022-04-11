@@ -51,7 +51,7 @@ namespace subd_laba5
             // 
             // buttonDelete
             // 
-            this.buttonDelete.Location = new System.Drawing.Point(455, 227);
+            this.buttonDelete.Location = new System.Drawing.Point(603, 222);
             this.buttonDelete.Name = "buttonDelete";
             this.buttonDelete.Size = new System.Drawing.Size(130, 39);
             this.buttonDelete.TabIndex = 9;
@@ -61,7 +61,7 @@ namespace subd_laba5
             // 
             // buttonRef
             // 
-            this.buttonRef.Location = new System.Drawing.Point(455, 164);
+            this.buttonRef.Location = new System.Drawing.Point(603, 159);
             this.buttonRef.Name = "buttonRef";
             this.buttonRef.Size = new System.Drawing.Size(130, 39);
             this.buttonRef.TabIndex = 8;
@@ -71,7 +71,7 @@ namespace subd_laba5
             // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(455, 104);
+            this.buttonUpdate.Location = new System.Drawing.Point(603, 99);
             this.buttonUpdate.Name = "buttonUpdate";
             this.buttonUpdate.Size = new System.Drawing.Size(130, 39);
             this.buttonUpdate.TabIndex = 7;
@@ -81,7 +81,7 @@ namespace subd_laba5
             // 
             // buttonAdd
             // 
-            this.buttonAdd.Location = new System.Drawing.Point(455, 40);
+            this.buttonAdd.Location = new System.Drawing.Point(603, 35);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(130, 39);
             this.buttonAdd.TabIndex = 6;
@@ -94,13 +94,13 @@ namespace subd_laba5
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(12, 26);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(419, 330);
+            this.dataGridView1.Size = new System.Drawing.Size(585, 330);
             this.dataGridView1.TabIndex = 5;
             // 
             // labelId
             // 
             this.labelId.AutoSize = true;
-            this.labelId.Location = new System.Drawing.Point(679, 43);
+            this.labelId.Location = new System.Drawing.Point(812, 43);
             this.labelId.Name = "labelId";
             this.labelId.Size = new System.Drawing.Size(20, 15);
             this.labelId.TabIndex = 13;
@@ -109,7 +109,7 @@ namespace subd_laba5
             // comboBoxId
             // 
             this.comboBoxId.FormattingEnabled = true;
-            this.comboBoxId.Location = new System.Drawing.Point(728, 40);
+            this.comboBoxId.Location = new System.Drawing.Point(861, 40);
             this.comboBoxId.Name = "comboBoxId";
             this.comboBoxId.Size = new System.Drawing.Size(108, 23);
             this.comboBoxId.TabIndex = 12;
@@ -117,7 +117,7 @@ namespace subd_laba5
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(660, 95);
+            this.label1.Location = new System.Drawing.Point(793, 95);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(62, 15);
             this.label1.TabIndex = 15;
@@ -126,7 +126,7 @@ namespace subd_laba5
             // comboBoxIdPilot
             // 
             this.comboBoxIdPilot.FormattingEnabled = true;
-            this.comboBoxIdPilot.Location = new System.Drawing.Point(728, 92);
+            this.comboBoxIdPilot.Location = new System.Drawing.Point(861, 92);
             this.comboBoxIdPilot.Name = "comboBoxIdPilot";
             this.comboBoxIdPilot.Size = new System.Drawing.Size(108, 23);
             this.comboBoxIdPilot.TabIndex = 14;
@@ -134,7 +134,7 @@ namespace subd_laba5
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(647, 137);
+            this.label2.Location = new System.Drawing.Point(780, 137);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(75, 15);
             this.label2.TabIndex = 17;
@@ -143,7 +143,7 @@ namespace subd_laba5
             // comboBoxIdAirplane
             // 
             this.comboBoxIdAirplane.FormattingEnabled = true;
-            this.comboBoxIdAirplane.Location = new System.Drawing.Point(728, 134);
+            this.comboBoxIdAirplane.Location = new System.Drawing.Point(861, 134);
             this.comboBoxIdAirplane.Name = "comboBoxIdAirplane";
             this.comboBoxIdAirplane.Size = new System.Drawing.Size(108, 23);
             this.comboBoxIdAirplane.TabIndex = 16;
@@ -151,7 +151,7 @@ namespace subd_laba5
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(642, 183);
+            this.label3.Location = new System.Drawing.Point(775, 183);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(80, 15);
             this.label3.TabIndex = 19;
@@ -160,7 +160,7 @@ namespace subd_laba5
             // comboBoxIdRoute
             // 
             this.comboBoxIdRoute.FormattingEnabled = true;
-            this.comboBoxIdRoute.Location = new System.Drawing.Point(728, 180);
+            this.comboBoxIdRoute.Location = new System.Drawing.Point(861, 180);
             this.comboBoxIdRoute.Name = "comboBoxIdRoute";
             this.comboBoxIdRoute.Size = new System.Drawing.Size(108, 23);
             this.comboBoxIdRoute.TabIndex = 18;
@@ -168,7 +168,7 @@ namespace subd_laba5
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(627, 221);
+            this.label4.Location = new System.Drawing.Point(760, 221);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(61, 15);
             this.label4.TabIndex = 21;
@@ -177,7 +177,7 @@ namespace subd_laba5
             // comboBoxIdTicket
             // 
             this.comboBoxIdTicket.FormattingEnabled = true;
-            this.comboBoxIdTicket.Location = new System.Drawing.Point(728, 218);
+            this.comboBoxIdTicket.Location = new System.Drawing.Point(861, 218);
             this.comboBoxIdTicket.Name = "comboBoxIdTicket";
             this.comboBoxIdTicket.Size = new System.Drawing.Size(108, 23);
             this.comboBoxIdTicket.TabIndex = 20;
@@ -185,7 +185,7 @@ namespace subd_laba5
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(618, 267);
+            this.label5.Location = new System.Drawing.Point(751, 267);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(151, 15);
             this.label5.TabIndex = 22;
@@ -193,7 +193,7 @@ namespace subd_laba5
             // 
             // textBoxCount
             // 
-            this.textBoxCount.Location = new System.Drawing.Point(786, 264);
+            this.textBoxCount.Location = new System.Drawing.Point(919, 264);
             this.textBoxCount.Name = "textBoxCount";
             this.textBoxCount.Size = new System.Drawing.Size(49, 23);
             this.textBoxCount.TabIndex = 23;
@@ -202,7 +202,7 @@ namespace subd_laba5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(865, 380);
+            this.ClientSize = new System.Drawing.Size(981, 380);
             this.Controls.Add(this.textBoxCount);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
