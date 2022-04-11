@@ -76,9 +76,10 @@ namespace DB.Migrations
                     IdPilot = table.Column<int>(type: "integer", nullable: false),
                     PilotId = table.Column<int>(type: "integer", nullable: true),
                     IdRoute = table.Column<int>(type: "integer", nullable: false),
+                    RouteId = table.Column<int>(type: "integer", nullable: true),
                     IdAirplane = table.Column<int>(type: "integer", nullable: false),
                     AirplaneId = table.Column<int>(type: "integer", nullable: true),
-                    RouteId = table.Column<int>(type: "integer", nullable: false),
+                    IdTicket = table.Column<int>(type: "integer", nullable: false),
                     TicketId = table.Column<int>(type: "integer", nullable: true),
                     OccupPlaces = table.Column<int>(type: "integer", nullable: false)
                 },
@@ -102,7 +103,7 @@ namespace DB.Migrations
                         column: x => x.RouteId,
                         principalTable: "Routes",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
                         name: "FK_Flights_Tickets_TicketId",
                         column: x => x.TicketId,

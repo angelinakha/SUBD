@@ -10,7 +10,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace DB.Migrations
 {
     [DbContext(typeof(Database))]
-    [Migration("20220411081648_init")]
+    [Migration("20220411100903_init")]
     partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -62,13 +62,16 @@ namespace DB.Migrations
                     b.Property<int>("IdRoute")
                         .HasColumnType("integer");
 
+                    b.Property<int>("IdTicket")
+                        .HasColumnType("integer");
+
                     b.Property<int>("OccupPlaces")
                         .HasColumnType("integer");
 
                     b.Property<int?>("PilotId")
                         .HasColumnType("integer");
 
-                    b.Property<int>("RouteId")
+                    b.Property<int?>("RouteId")
                         .HasColumnType("integer");
 
                     b.Property<int?>("TicketId")
@@ -159,9 +162,7 @@ namespace DB.Migrations
 
                     b.HasOne("DB.Tables.Route", "Route")
                         .WithMany("Flights")
-                        .HasForeignKey("RouteId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("RouteId");
 
                     b.HasOne("DB.Tables.Ticket", "Ticket")
                         .WithMany("Flights")

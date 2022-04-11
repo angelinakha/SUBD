@@ -43,7 +43,7 @@ namespace subd_laba5
             this.label3 = new System.Windows.Forms.Label();
             this.comboBoxIdRoute = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.comboBoxRouteId = new System.Windows.Forms.ComboBox();
+            this.comboBoxIdTicket = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.textBoxCount = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -57,6 +57,7 @@ namespace subd_laba5
             this.buttonDelete.TabIndex = 9;
             this.buttonDelete.Text = "Удалить";
             this.buttonDelete.UseVisualStyleBackColor = true;
+            this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
             // 
             // buttonRef
             // 
@@ -66,6 +67,7 @@ namespace subd_laba5
             this.buttonRef.TabIndex = 8;
             this.buttonRef.Text = "Изменить";
             this.buttonRef.UseVisualStyleBackColor = true;
+            this.buttonRef.Click += new System.EventHandler(this.buttonRef_Click);
             // 
             // buttonUpdate
             // 
@@ -75,6 +77,7 @@ namespace subd_laba5
             this.buttonUpdate.TabIndex = 7;
             this.buttonUpdate.Text = "Обновить";
             this.buttonUpdate.UseVisualStyleBackColor = true;
+            this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // buttonAdd
             // 
@@ -84,6 +87,7 @@ namespace subd_laba5
             this.buttonAdd.TabIndex = 6;
             this.buttonAdd.Text = "Добавить";
             this.buttonAdd.UseVisualStyleBackColor = true;
+            this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
             // dataGridView1
             // 
@@ -166,17 +170,17 @@ namespace subd_laba5
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(627, 221);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(95, 15);
+            this.label4.Size = new System.Drawing.Size(61, 15);
             this.label4.TabIndex = 21;
-            this.label4.Text = "Id направления:";
+            this.label4.Text = "Id билета:";
             // 
-            // comboBoxRouteId
+            // comboBoxIdTicket
             // 
-            this.comboBoxRouteId.FormattingEnabled = true;
-            this.comboBoxRouteId.Location = new System.Drawing.Point(728, 218);
-            this.comboBoxRouteId.Name = "comboBoxRouteId";
-            this.comboBoxRouteId.Size = new System.Drawing.Size(108, 23);
-            this.comboBoxRouteId.TabIndex = 20;
+            this.comboBoxIdTicket.FormattingEnabled = true;
+            this.comboBoxIdTicket.Location = new System.Drawing.Point(728, 218);
+            this.comboBoxIdTicket.Name = "comboBoxIdTicket";
+            this.comboBoxIdTicket.Size = new System.Drawing.Size(108, 23);
+            this.comboBoxIdTicket.TabIndex = 20;
             // 
             // label5
             // 
@@ -202,7 +206,7 @@ namespace subd_laba5
             this.Controls.Add(this.textBoxCount);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.comboBoxRouteId);
+            this.Controls.Add(this.comboBoxIdTicket);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.comboBoxIdRoute);
             this.Controls.Add(this.label2);
@@ -218,6 +222,7 @@ namespace subd_laba5
             this.Controls.Add(this.dataGridView1);
             this.Name = "FormFlight";
             this.Text = "FormFlight";
+            this.Load += new System.EventHandler(this.FormFlight_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -240,7 +245,7 @@ namespace subd_laba5
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox comboBoxIdRoute;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox comboBoxRouteId;
+        private System.Windows.Forms.ComboBox comboBoxIdTicket;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBoxCount;
     }

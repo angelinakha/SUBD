@@ -17,7 +17,7 @@ namespace DB.Tables
 		public Route Route { get; set; }
 		public int IdAirplane { get; set; }
 		public Airplane Airplane { get; set; }
-		public int RouteId { get; set; }
+		public int IdTicket { get; set; }
 		public Ticket Ticket { get; set; }
 
 		public int OccupPlaces { get; set; }
