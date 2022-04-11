@@ -11,5 +11,6 @@ namespace DB.Tables
         public int Id { get; set; }
         public string Aircraftname { get; set; }
         public int MaxNumberOfSeats { get; set; }
+        public List<Flight> Flights { get; set; }
     }
 }

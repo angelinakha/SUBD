@@ -32,5 +32,37 @@ namespace DB.Implements
             }
             return element;
         }
+        public void Insert(Airplane model)
+        {
+            using var context = new Database();
+            context.Airplanes.Add(model);
+            context.SaveChanges();
+        }
+        public void Delete(Airplane model)
+        {
+            using var context = new Database();
+            Airplane element = context.Airplanes.FirstOrDefault(rec => rec.Id == model.Id);
+            if (element != null)
+            {
+                context.Airplanes.Remove(element);
+                context.SaveChanges();
+            }
+            else
+            {
+                throw new Exception("Элемент не найден");
+            }
+        }
+        public void Update(Airplane model)
+        {
+            using var context = new Database();
+            var element = context.Airplanes.FirstOrDefault(rec => rec.Id == model.Id);
+            if (element == null)
+            {
+                throw new Exception("Элемент не найден");
+            }
+            element.Aircraftname = model.Aircraftname;
+            element.MaxNumberOfSeats = model.MaxNumberOfSeats;
+            context.SaveChanges();
+        }
     }
 }

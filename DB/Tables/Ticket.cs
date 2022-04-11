@@ -12,6 +12,6 @@ namespace DB.Tables
         public decimal TicketPrice { get; set; }
         public string FlightNumber { get; set; }
         public DateTime FlightDate { get; set; }
-
+        public List<Flight> Flights { get; set; }
     }
 }

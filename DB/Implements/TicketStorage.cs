@@ -32,5 +32,38 @@ namespace DB.Implements
             }
             return element;
         }
+        public void Insert(Ticket model)
+        {
+            using var context = new Database();
+            context.Tickets.Add(model);
+            context.SaveChanges();
+        }
+        public void Delete(Ticket model)
+        {
+            using var context = new Database();
+            Ticket element = context.Tickets.FirstOrDefault(rec => rec.Id == model.Id);
+            if (element != null)
+            {
+                context.Tickets.Remove(element);
+                context.SaveChanges();
+            }
+            else
+            {
+                throw new Exception("Элемент не найден");
+            }
+        }
+        public void Update(Ticket model)
+        {
+            using var context = new Database();
+            var element = context.Tickets.FirstOrDefault(rec => rec.Id == model.Id);
+            if (element == null)
+            {
+                throw new Exception("Элемент не найден");
+            }
+            element.TicketPrice = model.TicketPrice;
+            element.FlightNumber = model.FlightNumber;
+            element.FlightDate = model.FlightDate;
+            context.SaveChanges();
+        }
     }
 }

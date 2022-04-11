@@ -34,6 +34,10 @@ namespace subd_laba5
             this.buttonUpdate = new System.Windows.Forms.Button();
             this.buttonAdd = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.labelId = new System.Windows.Forms.Label();
+            this.comboBoxId = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -82,11 +86,48 @@ namespace subd_laba5
             this.dataGridView1.Size = new System.Drawing.Size(419, 330);
             this.dataGridView1.TabIndex = 5;
             // 
+            // labelId
+            // 
+            this.labelId.AutoSize = true;
+            this.labelId.Location = new System.Drawing.Point(660, 29);
+            this.labelId.Name = "labelId";
+            this.labelId.Size = new System.Drawing.Size(20, 15);
+            this.labelId.TabIndex = 13;
+            this.labelId.Text = "Id:";
+            // 
+            // comboBoxId
+            // 
+            this.comboBoxId.FormattingEnabled = true;
+            this.comboBoxId.Location = new System.Drawing.Point(709, 26);
+            this.comboBoxId.Name = "comboBoxId";
+            this.comboBoxId.Size = new System.Drawing.Size(108, 23);
+            this.comboBoxId.TabIndex = 12;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(621, 78);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(79, 15);
+            this.label1.TabIndex = 14;
+            this.label1.Text = "Цена билета:";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(709, 72);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(107, 23);
+            this.textBox1.TabIndex = 15;
+            // 
             // FormTicket
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(747, 354);
+            this.ClientSize = new System.Drawing.Size(840, 354);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.labelId);
+            this.Controls.Add(this.comboBoxId);
             this.Controls.Add(this.buttonDelete);
             this.Controls.Add(this.buttonRef);
             this.Controls.Add(this.buttonUpdate);
@@ -96,6 +137,7 @@ namespace subd_laba5
             this.Text = "FormTicket";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -106,5 +148,9 @@ namespace subd_laba5
         private System.Windows.Forms.Button buttonUpdate;
         private System.Windows.Forms.Button buttonAdd;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label labelId;
+        private System.Windows.Forms.ComboBox comboBoxId;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

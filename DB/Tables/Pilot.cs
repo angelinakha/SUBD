@@ -10,5 +10,6 @@ namespace DB.Tables
     {
         public int Id { get; set; }
         public string NamePilot { get; set; }
+        public List<Flight> Flights { get; set; }
     }
 }

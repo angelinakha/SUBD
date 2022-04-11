@@ -32,5 +32,36 @@ namespace DB.Implements
             }
             return element;
         }
+        public void Insert(Pilot model)
+        {
+            using var context = new Database();
+            context.Pilots.Add(model);
+            context.SaveChanges();
+        }
+        public void Delete(Pilot model)
+        {
+            using var context = new Database();
+            Pilot element = context.Pilots.FirstOrDefault(rec => rec.Id == model.Id);
+            if (element != null)
+            {
+                context.Pilots.Remove(element);
+                context.SaveChanges();
+            }
+            else
+            {
+                throw new Exception("Элемент не найден");
+            }
+        }
+        public void Update(Pilot model)
+        {
+            using var context = new Database();
+            var element = context.Pilots.FirstOrDefault(rec => rec.Id == model.Id);
+            if (element == null)
+            {
+                throw new Exception("Элемент не найден");
+            }
+            element.NamePilot = model.NamePilot;
+            context.SaveChanges();
+        }
     }
 }

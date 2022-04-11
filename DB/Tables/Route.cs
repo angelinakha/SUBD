@@ -13,6 +13,7 @@ namespace DB.Tables
         public string Destination { get; set; }
         public DateTime FlightDate { get; set; }
         public DateTime DepartureTime { get; set; }
+        public List<Flight> Flights { get; set; }
 
     }
 }

@@ -26,5 +26,36 @@ namespace subd_laba5
         {
 
         }
+
+        private void FormAirplane_Load(object sender, EventArgs e)
+        {
+
+        }
+
+
+        private void textBoxSeat_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelId_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelName_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBoxId_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
